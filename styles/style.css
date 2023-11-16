@@ -1,0 +1,493 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: Nunito Sans;
+    src: url("../fonts/NunitoSans-VariableFont_YTLC,opsz,wdth,wght.ttf");
+}
+
+@font-face {
+    font-family: Montserrat;
+    src: url("../fonts/Montserrat-VariableFont_wght.ttf");
+}
+
+body{
+    font-family: Nunito Sans;
+    color: rgba(94, 94, 94, 1);
+    font-size: 18px;
+    cursor: auto;
+    background: rgba(238, 238, 238, 1) url("../images/fon.svg") no-repeat;
+
+}
+
+a {
+    text-decoration: none;
+    color: rgba(49, 49, 49, 1)
+}
+
+.container {
+    max-width: 1216px;
+    margin: 0 auto;
+    height: auto;
+}
+
+.button {
+    font-family: Nunito Sans;
+    font-size: 18px;
+    font-weight: 700;
+    display: flex;
+    padding: 15px 30px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 5px;
+    border: rgba(173, 213, 127, 1) 2px solid ;
+    background: rgba(255, 255, 255, 1);
+}
+
+.all-title {
+    width: auto;
+    margin: auto;
+    text-align: left;
+    font-family: Montserrat;
+    font-size: 36px;
+    font-weight: 600;
+    color: rgba(49, 49, 49, 1);
+    line-height: 150%;
+}
+
+
+.bold {
+    color: rgba(49, 49, 49, 1);
+    font-weight: bold;
+    line-height: 40px;
+    letter-spacing: -1px;
+}
+
+/*.fon {*/
+/*    overflow: hidden;*/
+/*    z-index: -5;*/
+/*    position: absolute;*/
+/*}*/
+/*.fon-container {*/
+/*    max-width: 1903px;*/
+/*    margin: 0 auto;*/
+/*}*/
+
+.main{
+    overflow: hidden;
+}
+
+/*header*/
+
+.header{
+    padding: 16px 0 17px 0;
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.header .container, .footer .container {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    vertical-align: bottom;
+}
+
+.menu {
+    margin-left: 472px;
+    font-weight: 700;
+    display: inline-flex;
+    align-items: center;
+}
+
+.menu-list {
+    list-style: none;
+    display: flex;
+    width: 376px;
+}
+
+.menu-item {
+    margin-right: 80px;
+    font-size: 20px;
+    color: rgba(49, 49, 49, 1);
+}
+
+.menu-item a:hover {
+    border-bottom: rgba(173, 213, 127, 1) solid;
+}
+
+/*footer*/
+
+.footer-all {
+    height: 160px;
+    border-top: 2px solid rgba(216, 216, 216, 1);
+    padding-top: 20px;
+}
+
+.footer-menu, .footer-info{
+    margin-left: auto;
+    margin-right: 0px;
+    text-align: right;
+}
+
+.footer-info p {
+    margin-top: 30px;
+    margin-right: 80px;
+    display: inline-flex;
+    align-items: center;
+    margin-left: auto;
+    text-align: center;
+}
+
+/*index1*/
+
+.main-content {
+    padding-top: 100px;
+    padding-bottom: 60px;
+}
+
+.main-content .container {
+    position: relative;
+    height: 442px;
+    display: flex;
+}
+
+.main-info {
+    max-width: 701px;
+}
+
+.main-title {
+    font-family: Montserrat;
+    color: rgba(49, 49, 49, 1);
+    font-size: 44px;
+    line-height: 120%;
+    letter-spacing: -0.88px;
+    margin-bottom: 30px;
+}
+
+.main-text {
+    line-height: 150%;
+    margin-bottom: 30px;
+}
+
+.main-image{
+    margin-left: 73px;
+}
+#main-action-button {
+    background-color: rgba(173, 213, 127, 1);
+    color: rgba(255, 255, 255, 1);
+    cursor: pointer;
+}
+
+.test .container {
+    display: flex;
+    align-items: center;
+    background-color: rgba(249, 245, 255, 1);
+    height: 130px;
+    border-radius: 20px;
+}
+
+.test{
+    padding: 43px 0 43px 0;
+}
+
+.test-image img {
+    vertical-align: bottom;
+    margin: 30px;
+}
+
+.test-info {
+    display: flex;
+    align-items: center;
+}
+
+.test-text {
+    font-size: 22px;
+    font-weight: 400;
+}
+
+#test-button {
+    margin-left: auto;
+    margin-right: 30px;
+}
+
+.steps {
+    padding-top: 150px;
+    padding-bottom: 150px;
+}
+
+.steps-slogan {
+    width: 495px;
+    margin: 20px auto 42px auto;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 150%;
+    text-align: center;
+}
+
+.step{
+    margin: 8px;
+}
+
+.steps-title {
+    text-align: center;
+}
+
+.step-items {
+    display: grid;
+    margin: auto;
+    gap: 42px;
+    grid-template-columns: repeat(3, 370px);
+    justify-content: center;
+}
+
+.step-item {
+    text-align: center;
+}
+
+.step-item-title {
+    margin: 20px 0;
+}
+
+.lesson-item-title {
+    color: #5E5E5E;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 140%; /* 28px */
+}
+
+.lesson-item-text {
+    margin: 0 0 20px 0;
+    color: #313131;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 120%; /* 33.6px */
+}
+
+.step-line1{
+    position: absolute;
+    margin-left: 326px;
+    margin-top: 73px;
+    width: 130px;
+    height: 2px;
+    border-radius: 1px;
+    background: rgba(216, 216, 216, 1);
+}
+
+.step-line2 {
+    position: absolute;
+    margin-left: 738px;
+    margin-top: 73px;
+    width: 130px;
+    height: 2px;
+    border-radius: 1px;
+    background: rgba(216, 216, 216, 1);
+}
+
+.step-item-title {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 140%;
+}
+
+.step-item-text {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+.lessons-title {
+    margin-left: 0;
+    text-align: left;
+}
+
+.lesson-items {
+    padding-top: 50px;
+    display: grid;
+    margin: auto;
+    gap: 20px;
+    grid-template-columns: repeat(3, 392px);
+    justify-content: center;
+    padding-bottom: 150px;
+}
+
+.lesson-item {
+    text-align: left;
+    font-size: 24px;
+}
+
+/*lessons*/
+
+.text .container {
+    display: flex;
+    align-items: flex-start;
+    gap: 123px;
+}
+
+.lesson-container {
+    width: 804px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 150%;
+    text-align: left;
+}
+
+.breadcrumps {
+    margin: 60px 0 30px 0;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.lesson-text {
+    margin: 40px 0 60px 0;
+}
+
+.lesson-text p, label {
+    margin: 0 0 14px;
+}
+
+#pinned-window {
+    /*position: absolute;*/
+    top: 109px;
+    /*left: 1216px;*/
+    width: 229px;
+    padding: 30px;
+    border-radius: 20px;
+    background: #F9F5FF;
+    margin-top: 109px;
+}
+
+/*#pinned-window li{*/
+/*    color: #313131;*/
+/*    font-size: 20px;*/
+/*    margin: 0 0 20px;*/
+/*    font-weight: 400;*/
+/*    line-height: 140%;*/
+/*    letter-spacing: -1px;*/
+/*    text-decoration: none;*/
+/*}*/
+
+/*.pinned-window-list {*/
+/*    list-style: none;*/
+/*    text-decoration: none;*/
+/*    color: rgba(49, 49, 49, 1);*/
+/*    font-size: 20px;*/
+/*}*/
+
+/*#now-window-item a {*/
+/*    color: #913E98;*/
+/*    font-size: 20px;*/
+/*    font-weight: 400;*/
+/*    line-height: 140%;*/
+/*    letter-spacing: -1px;*/
+/*}*/
+
+/*#now-window-item span {*/
+/*    color: #913E98;*/
+/*    font-weight: bold;*/
+/*    line-height: 40px;*/
+/*    letter-spacing: -1px;*/
+/*}*/
+
+.quote {
+    border-radius: 20px;
+    background: #F9F5FF;
+    margin: 16px 0 40px;
+}
+
+.lesson-quote {
+    padding: 20px;
+    color: #913E98;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 150%;
+}
+
+.little-lessons-title {
+    color:#313131;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 150%;
+    margin: 30px 0 20px;
+}
+
+.lesson-container li{
+    list-style-position: inside;
+}
+
+#initial-test {
+    border-radius: 20px;
+    border: 3px solid #913E98;
+    background: #FFF;
+    padding-left: 30px;
+}
+
+.test-question {
+    color: #313131;
+    font-size: 20px;;
+    font-weight: 600;
+    line-height: 140%;
+    margin-right: 30px;
+}
+
+.answer {
+    display: flex;
+}
+
+.test-button:after  {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: rgba(232, 231, 231, 1);
+    border: 1px solid rgba(157, 146, 143, 1);
+}
+
+.test-button:checked:after {
+    background-color: #913E98;
+    border: 1px solid rgba(157, 146, 143, 1);
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    position: relative;
+}
+
+
+
+/*index11*/
+
+.list .all-title {
+    margin: 60px 0 40px 0;
+}
+
+.list-items {
+    width: 1216px;
+    display: inline-flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-bottom: 150px;
+}
+
+.list-item{
+    display: flex;
+    align-items: flex-start;
+    gap: 50px;
+    border-radius: 20px;
+    border: 2px solid #E7E7E7;
+    background: #FFF;
+}
+
+.list-item-text {
+    padding: 20px 0px;
+}
+
+.lesson-test-result {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 109px;
+    /*color: ;*/
+}
