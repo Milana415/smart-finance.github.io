@@ -20,10 +20,7 @@
                         <a href="index1.html" data-link="main">Главная</a>
                     </li>
                     <li class="menu-item">
-                        <a href="#" data-link="lessons">Уроки и тесты</a>
-                    </li>
-                    <li class="menu-item">
-                        <a href="#" data-link="table">Таблица бюджета</a>
+                        <a href="index11.html" data-link="lessons">Уроки и тесты</a>
                     </li>
                 </ul>
             </nav>
@@ -33,21 +30,23 @@
         </div>
     </header>
 </section>
-
 <section class="registration">
     <div class="container">
         <h1 class="all-title">Войдите в аккаунт</h1>
-        <div class="input-info">
-            <label>Укажите вашу электронную почту
-                <input type="text" size="30">
-            </label>
-            <label>Введите пароль
-                <input type="text" size="10">
-            </label>
-        </div>
-        <p>Создавая аккаунт, вы принимаете Пользовательское соглашение и Политику конфиденциальности</p>
-        <button class="button" id="main-action-button">Создать аккаунт</button>
-        <div class="line-entrance"></div>
+        <form action="">
+            <div class="input-info">
+                <label>Укажите вашу электронную почту
+                    <input type="email" size="30" placeholder="Ваша электронная почта" required>
+                </label>
+                <label>Введите пароль
+                    <input type="password" size="10" placeholder="Ваш пароль" required>
+                </label>
+            </div>
+            <button class="button" id="main-action-button"><input type="submit">Войти</button>
+            <div class="line-entrance"></div>
+            <p>Ещё нет аккаунта?</p>
+            <button>Зарегистрироваться</button>
+        </form>
     </div>
 </section>
 

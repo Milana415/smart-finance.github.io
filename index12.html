@@ -37,24 +37,73 @@
                 <p class="breadcrumps">Уроки и тесты / <span class="bold">Заключительный тест </span></p>
             </div>
             <form name="test" class="test-list">
-                <p>1. Какие из перечисленных опций лучше всего описывают ваши основные цели в распределении личных
-                    финансов?</p>
-                <input type="radio" name="question1" value="a"> a) JavaScript<br>
-                <input type="radio" name="question1" value="b"> b) HTML<br>
-                <input type="radio" name="question1" value="c"> c) CSS<br>
+                <div id="que1">
+                    <p>1. Какой процент от своего ежемесячного дохода рекомендуется откладываете на сбережения?</p>
+                    <label>
+                        <input type="radio" name="question1" value="a"> a) не менее 10%<br>
+                    </label>
+                    <label>
+                        <input type="radio" name="question1" value="b"> b) 11% - 20%<br>
+                    </label>
+                    <label>
+                        <input type="radio" name="question1" value="c"> c) 21% - 30%<br>
+                    </label>
+                    <label>
+                        <input type="radio" name="question1" value="d"> d) более 30%<br>
+                    </label>
+                    <label>
+                        <input type="radio" name="question1" value="e"> e) не нужно откладывать сбережения<br>
+                    </label>
+                </div>
 
-                <p>2. Какие из перечисленных стратегий вы используете для управления своими личными финансами?</p>
-                <input type="radio" name="question2" value="a"> a) Бюджетирование и отслеживание расходов<br>
-                <input type="radio" name="question2" value="b"> b) Автоматические переводы на сберегательный счет<br>
-                <input type="radio" name="question2" value="c"> c) Инвестирование в недвижимость<br>
-                <input type="radio" name="question2" value="d"> d) Регулярное пополнение пенсионного счета<br>
-                <input type="radio" name="question2" value="e"> e) Покупка лотерейных билетов<br>
 
-                <p>3. Что такое бюджет и почему он важен для личных финансов?</p>
-                <input type="radio" name="question3" value="a"> a) Бюджетирование и отслеживание расходов<br>
-                <input type="radio" name="question3" value="b"> b) Автоматические переводы на сберегательный счет<br>
-                <input type="radio" name="question3" value="c"> c) Инвестирование в недвижимость<br>
-                <input type="radio" name="question3" value="d"> d) Регулярное пополнение пенсионного счета<br>
+                <div id="que2">
+                    <p>2. Какие из перечисленных стратегий вы используете для управления своими личными финансами?</p>
+                    <label>
+                        <input type="radio" name="question2" value="a"> a) Бюджетирование и отслеживание расходов<br>
+                    </label>
+                    <label>
+                        <input type="radio" name="question2" value="b"> b) Автоматические
+                        переводы на сберегательный счет<br>
+                    </label>
+                    <label>
+                        <input type="radio" name="question2" value="c"> c) Инвестирование в
+                        недвижимость<br>
+                    </label>
+                    <label>
+                        <input type="radio" name="question2" value="c"> d) Регулярное
+                        пополнение пенсионного счета<br>
+                    </label>
+                    <label>
+                        <input type="radio" name="question2" value="c"> e) Покупка
+                        лотерейных билетов<br>
+                    </label>
+                </div>
+
+                <div id="que3">
+                    <p>3. Что такое бюджет и почему он важен для личных финансов?</p>
+                    <label>
+                        <input type="radio" name="question3" value="a"> a) Бюджетирование и отслеживание расходов<br>
+                    </label>
+                    <label>
+                        <input type="radio" name="question3" value="b"> b) Автоматические переводы на сберегательный счет<br>
+                    </label>
+                    <label>
+                        <input type="radio" name="question3" value="c"> c) Инвестирование в недвижимость<br>
+                    </label>
+                    <label>
+                        <input type="radio" name="question3" value="c"> d) Регулярное пополнение пенсионного счета<br>
+                    </label>
+                </div>
+<!--                <p></p>-->
+<!--                <label>-->
+<!--                    <input type="radio" name="question2" value="c"> <br>-->
+<!--                </label>-->
+<!--                <input type="radio" name="question2" value="a" id="que2ans1"><label for="que2ans1"> </label><br>-->
+<!--                <input type="radio" name="question2" value="b" id="que2ans2"><label for="que2ans2"> </label><br>-->
+<!--                <input type="radio" name="question2" value="c" id="que2ans3"><label for="que2ans3"> </label><br>-->
+<!--                <input type="radio" name="question2" value="d" id="que2ans4"><label for="que2ans4"> </label><br>-->
+<!--                <input type="radio" name="question2" value="e" id="que2ans5"><label for="que2ans5"> </label><br>-->
 
                 <p>4. Что такое "аварийный фонд" в контексте личных финансов?</p>
                 <input type="radio" name="question3" value="a"> a) Дополнительный доход, полученный от неожиданных
@@ -73,7 +122,7 @@
                 <input type="radio" name="question3" value="c"> c) Специальный счет, предназначенный для покрытия
                 неотложных расходов и непредвиденных ситуаций<br>
                 <input type="radio" name="question3" value="d"> d) Счет, на который переводятся средства для отпуска<br>
-                <button type="submit">Проверить результаты теста</button>
+                <button type="submit" id="testChecked">Проверить результаты теста</button>
             </form>
         </div>
     </div>
