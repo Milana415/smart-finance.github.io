@@ -487,15 +487,6 @@ li {
 
 /*АДАПТАЦИЯ*/
 
-/*@media (min-width: 360px) {*/
-/*    .lesson-items{*/
-/*        display: flex;*/
-/*        flex-direction: column;*/
-/*        align-items: center;*/
-/*        text-align: center;*/
-/*    }*/
-/*}*/
-
 
 @media (max-width: 1217px) {
     .container {
@@ -542,24 +533,63 @@ li {
         margin-left: 180px;
     }
     .main-image {
-    width: 90%;
-    height: 90%;
-}
+        width: 90%;
+        height: 90%;
+    }
     .test .container {
         padding: 0;
-         height: 120px;
+        height: 120px;
     }
     .test-image img {
-    margin: 20px;
+        margin: 20px;
     }
     #test-button {
-    margin-right: 20px;
+        margin-right: 20px;
+        padding: 10px 15px 10px 15px;
     }
     .steps {
-    padding-top: 10px;
-    padding-bottom: 100px;
+        padding-top: 10px;
+        padding-bottom: 100px;
     }
     .lesson-items {
-    padding-bottom: 120px;
+        padding-bottom: 120px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 686px;
+    }
+    .menu {
+        margin-left: 0px;
+    }
+    .main-title {
+        margin-bottom: 30px;
+        position: absolute;
+    }
+    .main-text {
+        margin-bottom: 30px;
+        padding-top: 120px;
+    }
+    .main-image {
+        width: 64%;
+        height: 64%;
+        padding-top: 90px;
+    }
+    .test-text {
+        width: 440px;
+    }
+    #test-button {
+        padding: 10px 15px 10px 15px;
+    }
+    .main-content {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    .lesson-items {
+        padding-bottom: 120px;
+    }
+    .lesson-items {
+        grid-template-columns: repeat(1, 392px);
     }
 }
