@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Final test</title>
+    <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
@@ -36,99 +37,331 @@
             <div class="breadcrumps">
                 <p class="breadcrumps">Уроки и тесты / <span class="bold">Заключительный тест </span></p>
             </div>
-            <form name="test" class="test-list">
-                <div id="que1">
-                    <p>1. Какой процент от своего ежемесячного дохода рекомендуется откладываете на сбережения?</p>
+            <form name="test" id="test-list" class="test-form">
+                <div id="que1" class="ddd">
+                    <p class="test-question">1. Какой процент от своего ежемесячного дохода рекомендуется откладываете на сбережения?</p>
                     <label>
-                        <input type="radio" name="question1" value="a"> a) не менее 10%<br>
+                        <input type="radio" name="question1" value="a"> не менее 10%<br>
                     </label>
                     <label>
-                        <input type="radio" name="question1" value="b"> b) 11% - 20%<br>
+                        <input type="radio" name="question1" value="b"> 11% - 20%<br>
                     </label>
                     <label>
-                        <input type="radio" name="question1" value="c"> c) 21% - 30%<br>
+                        <input type="radio" name="question1" value="c"> 21% - 30%<br>
                     </label>
                     <label>
-                        <input type="radio" name="question1" value="d"> d) более 30%<br>
+                        <input type="radio" name="question1" value="d"> более 30%<br>
                     </label>
                     <label>
-                        <input type="radio" name="question1" value="e"> e) не нужно откладывать сбережения<br>
+                        <input type="radio" name="question1" value="e"> не нужно откладывать сбережения<br>
                     </label>
                 </div>
 
 
                 <div id="que2">
-                    <p>2. Какие из перечисленных стратегий вы используете для управления своими личными финансами?</p>
+                    <p class="test-question">2. Какие из перечисленных стратегий вы используете для управления своими личными финансами?</p>
                     <label>
-                        <input type="radio" name="question2" value="a"> a) Бюджетирование и отслеживание расходов<br>
+                        <input type="radio" name="question2" value="a"> бюджетирование и отслеживание расходов<br>
                     </label>
                     <label>
-                        <input type="radio" name="question2" value="b"> b) Автоматические
+                        <input type="radio" name="question2" value="b"> автоматические
                         переводы на сберегательный счет<br>
                     </label>
                     <label>
-                        <input type="radio" name="question2" value="c"> c) Инвестирование в
+                        <input type="radio" name="question2" value="c"> инвестирование в
                         недвижимость<br>
                     </label>
                     <label>
-                        <input type="radio" name="question2" value="c"> d) Регулярное
+                        <input type="radio" name="question2" value="c"> регулярное
                         пополнение пенсионного счета<br>
                     </label>
                     <label>
-                        <input type="radio" name="question2" value="c"> e) Покупка
+                        <input type="radio" name="question2" value="c"> покупка
                         лотерейных билетов<br>
                     </label>
                 </div>
 
                 <div id="que3">
-                    <p>3. Что такое бюджет и почему он важен для личных финансов?</p>
+                    <p class="test-question">3. Что такое бюджет и почему он важен для личных финансов?</p>
                     <label>
-                        <input type="radio" name="question3" value="a"> a) Бюджетирование и отслеживание расходов<br>
+                        <input type="radio" name="question3" value="a"> специальный вид банковской карты<br>
                     </label>
                     <label>
-                        <input type="radio" name="question3" value="b"> b) Автоматические переводы на сберегательный счет<br>
+                        <input type="radio" name="question3" value="b"> план расходов и доходов, позволяющий контролировать финансы<br>
                     </label>
                     <label>
-                        <input type="radio" name="question3" value="c"> c) Инвестирование в недвижимость<br>
+                        <input type="radio" name="question3" value="c"> страхование жизни<br>
                     </label>
                     <label>
-                        <input type="radio" name="question3" value="c"> d) Регулярное пополнение пенсионного счета<br>
+                        <input type="radio" name="question3" value="c"> документ, не имеющий отношения к финансам<br>
                     </label>
                 </div>
-<!--                <p></p>-->
-<!--                <label>-->
-<!--                    <input type="radio" name="question2" value="c"> <br>-->
-<!--                </label>-->
-<!--                <input type="radio" name="question2" value="a" id="que2ans1"><label for="que2ans1"> </label><br>-->
-<!--                <input type="radio" name="question2" value="b" id="que2ans2"><label for="que2ans2"> </label><br>-->
-<!--                <input type="radio" name="question2" value="c" id="que2ans3"><label for="que2ans3"> </label><br>-->
-<!--                <input type="radio" name="question2" value="d" id="que2ans4"><label for="que2ans4"> </label><br>-->
-<!--                <input type="radio" name="question2" value="e" id="que2ans5"><label for="que2ans5"> </label><br>-->
 
-                <p>4. Что такое "аварийный фонд" в контексте личных финансов?</p>
-                <input type="radio" name="question3" value="a"> a) Дополнительный доход, полученный от неожиданных
-                событий<br>
-                <input type="radio" name="question3" value="b"> b) Закрытый счет, на который переводятся деньги после
-                каждой покупки<br>
-                <input type="radio" name="question3" value="c"> c) Специальный счет, предназначенный для покрытия
-                неотложных расходов и непредвиденных ситуаций<br>
-                <input type="radio" name="question3" value="d"> d) Счет, на который переводятся средства для отпуска<br>
+                <div id="que4">
+                    <p class="test-question">4. Что такое "аварийный фонд" в контексте личных финансов?</p>
+                    <label>
+                        <input type="radio" name="question4" value="a"> дополнительный доход, полученный от неожиданных событий<br>
+                    </label>
+                    <label>
+                        <input type="radio" name="question4" value="b"> закрытый счет, на который переводятся деньги после
+                        каждой покупки<br>
+                    </label>
+                    <label>
+                        <input type="radio" name="question4" value="c"> специальный счет, предназначенный для покрытия
+                        неотложных расходов и непредвиденных ситуаций<br>
+                    </label>
+                    <label>
+                        <input type="radio" name="question4" value="d"> счет, на который переводятся средства для отпуска<br>                    </label>
+                </div>
 
-                <p>5. Какие факторы могут повлиять на ваше решение о том, как распределить личные финансы?</p>
-                <input type="radio" name="question3" value="a"> a) Дополнительный доход, полученный от неожиданных
-                событий<br>
-                <input type="radio" name="question3" value="b"> b) Закрытый счет, на который переводятся деньги после
-                каждой покупки<br>
-                <input type="radio" name="question3" value="c"> c) Специальный счет, предназначенный для покрытия
-                неотложных расходов и непредвиденных ситуаций<br>
-                <input type="radio" name="question3" value="d"> d) Счет, на который переводятся средства для отпуска<br>
-                <button type="submit" id="testChecked">Проверить результаты теста</button>
+                <div id="que5">
+                    <p class="test-question">5. Какие факторы могут повлиять на ваше решение о том, как распределить личные финансы?</p>
+                    <label>
+                        <input type="radio" name="question5" value="a"> ваши цели, доход, расходы и личные ценности<br>
+                    </label>
+                    <label>
+                        <input type="radio" name="question5" value="b"> фаза луны<br>
+                    </label>
+                    <label>
+                        <input type="radio" name="question5" value="c"> гороскоп<br>
+                    </label>
+                    <label>
+                        <input type="radio" name="question5" value="d"> результаты биржевых торгов<br>
+                    </label>
+                </div>
+
+                <div id="que6">
+                    <p class="test-question">6. Что такое бюджетирование расходов, и для чего оно используется?</p>
+                    <label>
+                        <input type="radio" name="question6" value="a"> это процесс увеличения доходов<br>
+                    </label>
+                    <label>
+                        <input type="radio" name="question6" value="b"> это процесс планирования и управления расходами<br>
+                    </label>
+                    <label>
+                        <input type="radio" name="question6" value="c"> это процесс инвестирования средств<br>
+                    </label>
+                </div>
+
+                <div id="que7">
+                    <p class="test-question">7. Какой инструмент часто используется для ведения бюджета и отслеживания расходов?</p>
+                    <label>
+                        <input type="radio" name="question7" value="a"> компас<br>
+                    </label>
+                    <label>
+                        <input type="radio" name="question7" value="b"> электрический пылесос<br>
+                    </label>
+                    <label>
+                        <input type="radio" name="question7" value="c"> бюджетный калькулятор или приложение для учета расходов<br>
+                    </label>
+                </div>
+
+                <div id="que8">
+                    <p class="test-question">8. Что означает "аварийный фонд" в контексте финансового планирования?</p>
+                    <label>
+                        <input type="radio" name="question8" value="a"> это средства, предназначенные для непредвиденных ситуаций и неотложных расходов<br>
+                    </label>
+                    <label>
+                        <input type="radio" name="question8" value="b"> это дополнительные деньги, которые можно тратить на развлечения<br>
+                    </label>
+                    <label>
+                        <input type="radio" name="question8" value="c"> это средства, выделяемые на отпуск<br>
+                    </label>
+                </div>
+
+                <div id="que9">
+                    <p class="test-question">9. Какой принцип следует при составлении бюджета?</p>
+                    <label>
+                        <input type="radio" name="question9" value="a"> планировать только доходы, но не расходы<br>
+                    </label>
+                    <label>
+                        <input type="radio" name="question9" value="b"> планировать расходы, не принимая во внимание доходы<br>
+                    </label>
+                    <label>
+                        <input type="radio" name="question9" value="c"> планировать как доходы, так и расходы, чтобы достичь финансовой стабильности<br>
+                    </label>
+                </div>
+
+                <div id="que10">
+                    <p class="test-question">10. Почему важно следить за расходами и регулярно обновлять бюджет?</p>
+                    <label>
+                        <input type="radio" name="question10" value="a"> чтобы потратить всю доступную сумму как можно быстрее<br>
+                    </label>
+                    <label>
+                        <input type="radio" name="question10" value="b"> чтобы оставить средства на несколько счетах и забыть о них<br>
+                    </label>
+                    <label>
+                        <input type="radio" name="question10" value="c"> чтобы удостовериться, что расходы соответствуют финансовым целям и ресурсам, и внести коррективы, если это не так<br>
+                    </label>
+                </div>
+
+                <div id="que11">
+                    <p class="test-question">11. Какая стратегия помогает контролировать расходы и сэкономить деньги?</p>
+                    <label>
+                        <input type="radio" name="question11" value="a"> покупать все, что понравится<br>
+                    </label>
+                    <label>
+                        <input type="radio" name="question11" value="b"> следить за каждой копейкой и сравнивать цены<br>
+                    </label>
+                    <label>
+                        <input type="radio" name="question11" value="c"> не задумываться о своих тратах<br>
+                    </label>
+                </div>
+
+                <div id="que12">
+                    <p class="test-question">12. Какие инструменты или приложения можно использовать для ведения бюджета и контроля расходов?</p>
+                    <label>
+                        <input type="radio" name="question12" value="a"> фотографии чеков<br>
+                    </label>
+                    <label>
+                        <input type="radio" name="question12" value="b"> бумажная тетрадь<br>
+                    </label>
+                    <label>
+                        <input type="radio" name="question12" value="c"> мобильные приложения для учета расходов<br>
+                    </label>
+                </div>
+
+                <div id="que13">
+                    <p class="test-question">13. Что такое экономия?</p>
+                    <label>
+                        <input type="radio" name="question13" value="a"> процесс увеличения расходов<br>
+                    </label>
+                    <label>
+                        <input type="radio" name="question13" value="b"> процесс сокращения расходов или эффективного использования ресурсов<br>
+                    </label>
+                    <label>
+                        <input type="radio" name="question13" value="c"> процесс получения кредита<br>
+                    </label>
+                    <label>
+                        <input type="radio" name="question13" value="d"> процесс инвестирования<br>
+                    </label>
+                </div>
+
+                <div id="que14">
+                    <p class="test-question">14. Какова роль экономии в финансовом благополучии?</p>
+                    <label>
+                        <input type="radio" name="question14" value="a"> экономия не имеет роли в финансовом благополучии<br>
+                    </label>
+                    <label>
+                        <input type="radio" name="question14" value="b"> экономия приводит к увеличению долгов<br>
+                    </label>
+                    <label>
+                        <input type="radio" name="question14" value="c"> экономия помогает увеличить накопления, снизить долги и повысить финансовую стабильность<br>
+                    </label>
+                    <label>
+                        <input type="radio" name="question14" value="d"> экономия приводит к потере дохода<br>
+                    </label>
+                </div>
+
+                <div id="que15">
+                    <p class="test-question">15. Какие способы экономии можно применить в повседневной жизни?</p>
+                    <label>
+                        <input type="radio" name="question15" value="a"> только увеличение расходов<br>
+                    </label>
+                    <label>
+                        <input type="radio" name="question15" value="b"> только увеличение долгов<br>
+                    </label>
+                    <label>
+                        <input type="radio" name="question15" value="c"> бюджетирование, уменьшение излишних расходов, увеличение доходов<br>
+                    </label>
+                    <label>
+                        <input type="radio" name="question15" value="d"> только инвестирование<br>
+                    </label>
+                </div>
+                <div id="que16">
+                    <p class="test-question">16. Что означает бюджетирование как способ экономии?</p>
+                    <label>
+                        <input type="radio" name="question15" value="a"> увеличение всех расходов<br>
+                    </label>
+                    <label>
+                        <input type="radio" name="question15" value="b"> растрата всех сбережений<br>
+                    </label>
+                    <label>
+                        <input type="radio" name="question15" value="c"> планирование и контроль расходов в пределах бюджет<br>
+                    </label>
+                    <label>
+                        <input type="radio" name="question15" value="d"> инвестирование всех денег<br>
+                    </label>
+                </div>
+
+                <button onclick="FinalTestAnswers()" class="button" id="main-action-button">Проверить результаты теста</button>
             </form>
+        </div>
+        <div id="pinned-window">
+            <nav class="pinned-window-menu">
+                <ul class="pinned-window-list">
+                    <li>
+                        <a href="index5.html" class="pinned-window-item"><span class="bold">Начальный тест.</span> Какой
+                            ваш уровень финансовой грамотности?</a>
+                    </li>
+                    <li>
+                        <a href="index3.html" class="pinned-window-item"><span class="bold">Введение.</span> Понятие
+                            финансовой грамотности. Зачем и кому
+                            она нужна?</a>
+                    </li>
+                    <li>
+                        <a href="index2.html" class="pinned-window-item"><span class="bold">Глава 1.</span> Финансы.
+                            Распределение финансов.</a>
+                    </li>
+                    <li>
+                        <a href="index4.html" class="pinned-window-item"><span class="bold">Глава 2.</span> Планирование
+                            трат.
+                            Контроль расходов.</a>
+                    </li>
+                    <li>
+                        <a href="index6.html" class="pinned-window-item"><span class="bold">Глава 3.</span> Понятие
+                            экономии. Как
+                            экономить?</a>
+                    </li>
+                    <li>
+                        <a href="index7.html" class="pinned-window-item"><span class="bold">Глава 4.</span>
+                            Финансовая безопасность.</a>
+                    </li>
+                    <li>
+                        <a href="index8.html" class="pinned-window-item"><span class="bold">Глава 5.</span> Вклады.
+                            Инвестиции. Кредиты.</a>
+                    </li>
+                    <li>
+                        <div id="now-window-item">
+                            <a href="index12.html" class="pinned-window-item"><span class="bold">Заключительный тест. </span>
+                            Систематизация знаний</a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
         </div>
     </div>
 </section>
 
+<section class="footer-all">
+    <footer class="footer">
+        <div class="container">
+            <div class="logo">
+                <img src="images/logo.png" alt="Logo">
+            </div>
+            <nav class="footer-menu menu">
+                <ul class="menu-list">
+                    <li class="menu-item">
+                        <a href="index1.html" data-link="main">Главная</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="index11.html" data-link="lessons">Уроки и тесты</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+    <section class="footer-second">
+        <div class="container">
+            <div class="footer-info">
+                <p>© 2023. Smart Finance. Все права защищены</p>
+                <p>Политика конфиденциальности</p>
+                <p>Пользовательское соглашение</p>
+            </div>
+        </div>
+    </section>
+</section>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-<script src="js/script.js"></script>
+<script src="scripts/script.js"></script>
 </body>
 </html>
