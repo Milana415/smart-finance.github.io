@@ -556,7 +556,7 @@ li {
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 769px) {
     .container {
         max-width: 686px;
     }
