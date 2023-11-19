@@ -542,6 +542,20 @@ li {
         margin-left: 180px;
     }
     .test .container {
-        padding: 0 20px 0 20px;
+        padding: 0;
+         height: 120px;
+    }
+    .test-image img {
+    margin: 20px;
+    }
+    #test-button {
+    margin-right: 20px;
+    }
+    .steps {
+    padding-top: 10px;
+    padding-bottom: 100px;
+    }
+    .lesson-items {
+    padding-bottom: 120px;
     }
 }
