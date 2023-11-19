@@ -522,6 +522,17 @@ li {
     }
 }
 
+@media (max-width: 1040px) {
+    .container {
+        max-width: 960px;
+    }
+    .menu {
+        margin-left: 180px;
+    }
+    .lessons-title {
+        text-align: center;
+    }
+}
 
 @media (max-width: 961px) {
     .container {
@@ -532,15 +543,5 @@ li {
     }
     .test .container {
         padding: 0 20px 0 20px;
-    }
-}
-
-
-@media (max-width: 1040px) {
-    .container {
-        max-width: 960px;
-    }
-    .menu {
-        margin-left: 180px;
     }
 }
