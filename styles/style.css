@@ -536,11 +536,15 @@ li {
 
 @media (max-width: 961px) {
     .container {
-        max-width: 896px;
+        max-width: 866px;
     }
     .menu {
         margin-left: 180px;
     }
+    .main-image {
+    width: 90%;
+    height: 90%;
+}
     .test .container {
         padding: 0;
          height: 120px;
