@@ -70,16 +70,6 @@ li {
     letter-spacing: -1px;
 }
 
-/*.fon {*/
-/*    overflow: hidden;*/
-/*    z-index: -5;*/
-/*    position: absolute;*/
-/*}*/
-/*.fon-container {*/
-/*    max-width: 1903px;*/
-/*    margin: 0 auto;*/
-/*}*/
-
 .main{
     overflow: hidden;
 }
@@ -347,7 +337,7 @@ li {
 }
 
 .lesson-text {
-    margin: 40px 0 60px 0;
+    margin: 40px 0 150px 0;
 }
 
 .lesson-text p, label {
@@ -355,9 +345,6 @@ li {
 }
 
 #pinned-window {
-    /*position: absolute;*/
-    top: 109px;
-    /*left: 1216px;*/
     width: 229px;
     padding: 30px;
     border-radius: 20px;
@@ -365,37 +352,20 @@ li {
     margin-top: 109px;
 }
 
-/*#pinned-window li{*/
-/*    color: #313131;*/
-/*    font-size: 20px;*/
-/*    margin: 0 0 20px;*/
-/*    font-weight: 400;*/
-/*    line-height: 140%;*/
-/*    letter-spacing: -1px;*/
-/*    text-decoration: none;*/
-/*}*/
+#now-window-item .pinned-window-item{
+    color: #913E98;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 140%;
+    letter-spacing: -1px;
+}
 
-/*.pinned-window-list {*/
-/*    list-style: none;*/
-/*    text-decoration: none;*/
-/*    color: rgba(49, 49, 49, 1);*/
-/*    font-size: 20px;*/
-/*}*/
-
-/*#now-window-item a {*/
-/*    color: #913E98;*/
-/*    font-size: 20px;*/
-/*    font-weight: 400;*/
-/*    line-height: 140%;*/
-/*    letter-spacing: -1px;*/
-/*}*/
-
-/*#now-window-item span {*/
-/*    color: #913E98;*/
-/*    font-weight: bold;*/
-/*    line-height: 40px;*/
-/*    letter-spacing: -1px;*/
-/*}*/
+#now-window-item span {
+    color: #913E98;
+    font-weight: bold;
+    line-height: 40px;
+    letter-spacing: -1px;
+}
 
 .quote {
     border-radius: 20px;
@@ -423,11 +393,14 @@ li {
     list-style-position: inside;
 }
 
-#initial-test {
+    /*ТЕСТЫ*/
+
+#test-list {
     border-radius: 20px;
     border: 3px solid #913E98;
     background: #FFF;
-    padding-left: 30px;
+    padding: 30px 30px 30px 30px;
+    margin-bottom: 150px;
 }
 
 .test-question {
@@ -435,33 +408,48 @@ li {
     font-size: 20px;;
     font-weight: 600;
     line-height: 140%;
-    margin-right: 30px;
+    margin: 32px 30px 10px 0;
 }
 
-.answer {
-    display: flex;
+.lesson-container label{
+    margin-top: 8px;
 }
 
-.test-button:after  {
-    width: 16px;
-    height: 16px;
-    border-radius: 50%;
-    background-color: rgba(232, 231, 231, 1);
-    border: 1px solid rgba(157, 146, 143, 1);
+#test-list #main-action-button{
+    margin-top: 30px;
+}
+/*кнопки*/
+#test-list input {
+    /*display: none;*/
 }
 
-.test-button:checked:after {
-    background-color: #913E98;
-    border: 1px solid rgba(157, 146, 143, 1);
-    content: '';
-    display: inline-block;
-    visibility: visible;
-    position: relative;
+#test-list input:before {
+    background: #913E98;
 }
+/*.answers {*/
+/*    display: flex;*/
+/*}*/
+
+/*.test-button:after  {*/
+/*    width: 16px;*/
+/*    height: 16px;*/
+/*    border-radius: 50%;*/
+/*    background-color: rgba(232, 231, 231, 1);*/
+/*    border: 1px solid rgba(157, 146, 143, 1);*/
+/*}*/
+
+/*.test-button:checked:after {*/
+/*    background-color: #913E98;*/
+/*    border: 1px solid rgba(157, 146, 143, 1);*/
+/*    content: '';*/
+/*    display: inline-block;*/
+/*    visibility: visible;*/
+/*    position: relative;*/
+/*}*/
 
 
 
-/*index11*/
+    /*index11*/
 
 .list .all-title {
     margin: 60px 0 40px 0;
@@ -499,16 +487,7 @@ li {
 
 /*АДАПТАЦИЯ*/
 
-
 /*@media (min-width: 360px) {*/
-/*    .step-line1, step-line2 {*/
-/*        display: none;*/
-/*    }*/
-/*    .step-items {*/
-/*        display: flex;*/
-/*        flex-direction: column;*/
-/*        align-items: center;*/
-/*    }*/
 /*    .lesson-items{*/
 /*        display: flex;*/
 /*        flex-direction: column;*/
@@ -517,11 +496,36 @@ li {
 /*    }*/
 /*}*/
 
-/*@media (min-width: 768px) {*/
-/*    .lesson-items{*/
-/*        flex-direction: row;*/
-/*    }*/
-/*    .lesson-items{*/
-/*        flex-basis: 50%;*/
-/*    }*/
-/*}
+@media (min-width: 768px) {
+    .lesson-items{
+        flex-direction: row;
+    }
+    .lesson-items{
+        flex-basis: 50%;
+    }
+}
+
+@media (max-width: 1021px) {
+    .container {
+        max-width: 900px;
+    }
+    .menu {
+        margin-left: 272px;
+    }
+
+    .step-line1, .step-line2 {
+        display: none;
+    }
+    .step-items {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .lesson-items {
+        grid-template-columns: repeat(2, 392px);
+    }
+    .footer-info p {
+        margin-top: 10px;
+        display: block;
+    }
+}
