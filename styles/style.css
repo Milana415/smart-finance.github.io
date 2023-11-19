@@ -496,6 +496,7 @@ li {
 /*    }*/
 /*}*/
 
+
 @media (max-width: 1217px) {
     .container {
         max-width: 1096px;
@@ -525,6 +526,19 @@ li {
 @media (max-width: 961px) {
     .container {
         max-width: 896px;
+    }
+    .menu {
+        margin-left: 180px;
+    }
+    .test .container {
+        padding: 0 20px 0 20px;
+    }
+}
+
+
+@media (max-width: 1040px) {
+    .container {
+        max-width: 960px;
     }
     .menu {
         margin-left: 180px;
