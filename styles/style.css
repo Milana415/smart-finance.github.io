@@ -496,21 +496,12 @@ li {
 /*    }*/
 /*}*/
 
-@media (min-width: 768px) {
-    .lesson-items{
-        flex-direction: row;
-    }
-    .lesson-items{
-        flex-basis: 50%;
-    }
-}
-
 @media (max-width: 1217px) {
     .container {
-        max-width: 900px;
+        max-width: 1096px;
     }
     .menu {
-        margin-left: 240px;
+        margin-left: 360px;
     }
 
     .step-line1, .step-line2 {
@@ -527,5 +518,15 @@ li {
     .footer-info p {
         margin-top: 10px;
         display: block;
+    }
+}
+
+
+@media (max-width: 961px) {
+    .container {
+        max-width: 896px;
+    }
+    .menu {
+        margin-left: 180px;
     }
 }
