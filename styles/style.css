@@ -18,7 +18,7 @@ body{
     color: rgba(94, 94, 94, 1);
     font-size: 18px;
     cursor: auto;
-    background: rgba(208, 238, 238, 1) url("../images/fon.svg") no-repeat;
+    background: rgba(238, 238, 238, 1) url("../images/fon.svg") no-repeat;
 
 }
 
@@ -505,12 +505,12 @@ li {
     }
 }
 
-@media (max-width: 1021px) {
+@media (max-width: 1217px) {
     .container {
         max-width: 900px;
     }
     .menu {
-        margin-left: 272px;
+        margin-left: 260px;
     }
 
     .step-line1, .step-line2 {
