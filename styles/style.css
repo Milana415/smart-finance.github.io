@@ -524,7 +524,7 @@ li {
         text-align: center;
     }
 }
-
+/* 
 @media (max-width: 961px) {
     .container {
         max-width: 866px;
@@ -554,9 +554,9 @@ li {
     .lesson-items {
         padding-bottom: 120px;
     }
-}
+} */
 
-@media (max-width: 769px) {
+/* @media (max-width: 769px) {
     .container {
         max-width: 686px;
     }
@@ -591,5 +591,43 @@ li {
     }
     .lesson-items {
         grid-template-columns: repeat(1, 392px);
+    }
+}
+ */
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 90%;
+    }
+
+    .lesson-items {
+        grid-template-columns: repeat(1, 392px);
+    }
+
+    .step-line1, .step-line2, .menu, .main-image, .access{
+        display: none;
+    }
+
+    .steps .container {
+        max-width: 90%;
+    }
+
+    .step-items {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .test .container {
+        padding: 14px;
+        height: 302px;
+        display: block;
+    }
+    .footer .container {
+        display: revert;
+    }
+    .footer-info p {
+        margin-top: 30px;
+        margin-right: 0px;
+        display: block;
     }
 }
