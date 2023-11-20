@@ -608,6 +608,10 @@ li {
         display: none;
     }
 
+    .steps-slogan {
+    width: 100%;
+    }
+    
     .steps .container {
         max-width: 90%;
     }
