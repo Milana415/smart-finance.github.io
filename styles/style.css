@@ -79,6 +79,7 @@ li {
 .header{
     padding: 16px 0 17px 0;
     background-color: white;
+    box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.05);
 }
 
 .header .container, .footer .container {
