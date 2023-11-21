@@ -31,12 +31,10 @@ function FinalTestAnswers() {
     let scoreFinal =0;
 
     let answers = {
-        que1: "a", que2: "a", que3: "b", que4: "c", que5: "a", que6: "b", que7: "c",
-        que8: "a", que9: "c", que10: "c", que11: "b", que12: "c", que13: "b", que14: "c",
-        que15: "c", que16: "c", que17: "b", que18: "c", que19: "b", que20: "b", que21: "d",
-        que22: "c", que23: "c", que24: "c", que25: "c", que26: "d", que27: "b", que28: "d",
-        que29: "a", que30: "d", que31: "c",
-        que32: "b"
+        que1: "a", que2: "a", que3: "b", que4: "b", que5: "a", que6: "b", que7: "c",
+        que8: "a", que9: "c", que10: "c", que11: "b", que12: "b", que13: "b", que14: "c",
+        que15: "c", que16: "c", que17: "b", que18: "d", que19: "c", que20: "c", que21: "b",
+        que22: "c", que23: "a", que24: "d", que25: "c"
     };
 
     for(let i=1; i<=totalFinalQuestion; i++){
