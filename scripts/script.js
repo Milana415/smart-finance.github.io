@@ -33,7 +33,7 @@ function FinalTestAnswers() {
     let answers = {
         que1: "a", que2: "a", que3: "b", que4: "b", que5: "a", que6: "b", que7: "c",
         que8: "a", que9: "c", que10: "c", que11: "b", que12: "b", que13: "b", que14: "c",
-        que15: "c", que16: "b", que17: "b", que18: "d", que19: "c", que20: "c", que21: "b",
+        que15: "c", que16: "a", que17: "b", que18: "d", que19: "c", que20: "c", que21: "b",
         que22: "c", que23: "a", que24: "d", que25: "c"
     };
 
