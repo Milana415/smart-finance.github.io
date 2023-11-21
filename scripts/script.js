@@ -4,8 +4,8 @@ function StartTestAnswers() {
     let scoreStart =0;
 
     let answers = {
-        que1: "a", que2: "a", que3: "b", que4: "c", que5: "a", que6: "b", que7: "c",
-        que8: "a"
+        que1: "e", que2: "a", que3: "c", que4: "b", que5: "b", que6: "d", que7: "a",
+        que8: "c"
     };
 
     for(let i=1; i<=totalStartQuestion; i++){
