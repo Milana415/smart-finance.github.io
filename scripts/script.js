@@ -27,7 +27,7 @@ function StartTestAnswers() {
 
     //Проверка финального теста
 function FinalTestAnswers() {
-    let totalFinalQuestion = 32;
+    let totalFinalQuestion = 25;
     let scoreFinal =0;
 
     let answers = {
