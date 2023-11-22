@@ -495,7 +495,7 @@ li {
     }
 }
 
-@media (max-width: 1040px) {
+@media (max-width: 1041px) {
     .container {
         max-width: 960px;
     }
