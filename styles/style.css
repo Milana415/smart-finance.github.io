@@ -121,6 +121,7 @@ li {
     height: 160px;
     border-top: 2px solid rgba(216, 216, 216, 1);
     padding-top: 20px;
+    background-color: white;
 }
 
 .footer-menu, .footer-info{
@@ -428,27 +429,6 @@ li {
 #test-list input:before {
     background: #913E98;
 }
-/*.answers {*/
-/*    display: flex;*/
-/*}*/
-
-/*.test-button:after  {*/
-/*    width: 16px;*/
-/*    height: 16px;*/
-/*    border-radius: 50%;*/
-/*    background-color: rgba(232, 231, 231, 1);*/
-/*    border: 1px solid rgba(157, 146, 143, 1);*/
-/*}*/
-
-/*.test-button:checked:after {*/
-/*    background-color: #913E98;*/
-/*    border: 1px solid rgba(157, 146, 143, 1);*/
-/*    content: '';*/
-/*    display: inline-block;*/
-/*    visibility: visible;*/
-/*    position: relative;*/
-/*}*/
-
 
 
     /*index11*/
@@ -535,76 +515,6 @@ li {
         display: none;
     }
 }
-/* 
-@media (max-width: 961px) {
-    .container {
-        max-width: 866px;
-    }
-    .menu {
-        margin-left: 180px;
-    }
-    .main-image {
-        width: 90%;
-        height: 90%;
-    }
-    .test .container {
-        padding: 0;
-        height: 120px;
-    }
-    .test-image img {
-        margin: 20px;
-    }
-    #test-button {
-        margin-right: 20px;
-        padding: 10px 15px 10px 15px;
-    }
-    .steps {
-        padding-top: 10px;
-        padding-bottom: 100px;
-    }
-    .lesson-items {
-        padding-bottom: 120px;
-    }
-} */
-
-/* @media (max-width: 769px) {
-    .container {
-        max-width: 686px;
-    }
-    .menu {
-        margin-left: 0px;
-    }
-    .main-title {
-        margin-bottom: 30px;
-        position: absolute;
-    }
-    .main-text {
-        margin-bottom: 30px;
-        padding-top: 120px;
-    }
-    .main-image {
-        width: 64%;
-        height: 64%;
-        padding-top: 90px;
-    }
-    .test-text {
-        width: 440px;
-    }
-    #test-button {
-        padding: 10px 15px 10px 15px;
-    }
-    .main-content {
-        padding-top: 40px;
-        padding-bottom: 40px;
-    }
-    .lesson-items {
-        padding-bottom: 120px;
-    }
-    .lesson-items {
-        grid-template-columns: repeat(1, 392px);
-    }
-}
- */
 
 @media (max-width: 768px) {
     .container {
