@@ -498,6 +498,7 @@ li {
 @media (max-width: 1041px) {
     .container {
         max-width: 960px;
+        justify-content: center;
     }
     .menu {
         margin-left: 180px;
