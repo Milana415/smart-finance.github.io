@@ -538,6 +538,9 @@ label {
 }
 
 @media (max-width: 768px) {
+    body .lock{
+        overflow: hidden;
+    }
     .container {
         max-width: 90%;
     }
@@ -693,6 +696,7 @@ label {
         font-size: 18px;
         text-align: center;
         text-decoration: none;
+        margin-right: 0px;
     }
 
     .menu-item:hover {
@@ -701,6 +705,8 @@ label {
 
     .burger-checkbox:checked~.menu-list {
         transform: translateX(0);
+        flex-direction: column;
+        align-items: center;
     }
 }
 
