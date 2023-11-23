@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
@@ -13,7 +13,7 @@
     src: url("../fonts/Montserrat-VariableFont_wght.ttf");
 }
 
-body{
+body {
     font-family: Nunito Sans;
     color: rgba(94, 94, 94, 1);
     font-size: 18px;
@@ -47,7 +47,7 @@ li {
     align-items: center;
     gap: 10px;
     border-radius: 5px;
-    border: rgba(173, 213, 127, 1) 2px solid ;
+    border: rgba(173, 213, 127, 1) 2px solid;
     background: rgba(255, 255, 255, 1);
 }
 
@@ -70,20 +70,21 @@ li {
     letter-spacing: -1px;
 }
 
-.main{
+.main {
     overflow: hidden;
 }
 
 /*header*/
 
-.header{
+.header {
     z-index: 50;
     padding: 16px 0 17px 0;
     background-color: white;
     box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.05);
 }
 
-.header .container, .footer .container {
+.header .container,
+.footer .container {
     display: flex;
     align-items: center;
 }
@@ -124,7 +125,8 @@ li {
     background-color: white;
 }
 
-.footer-menu, .footer-info{
+.footer-menu,
+.footer-info {
     margin-left: auto;
     margin-right: 0px;
     text-align: right;
@@ -170,9 +172,10 @@ li {
     margin-bottom: 30px;
 }
 
-.main-image{
+.main-image {
     margin-left: 73px;
 }
+
 #main-action-button {
     background-color: rgba(173, 213, 127, 1);
     color: rgba(255, 255, 255, 1);
@@ -187,7 +190,7 @@ li {
     border-radius: 20px;
 }
 
-.test{
+.test {
     padding: 43px 0 43px 0;
 }
 
@@ -225,7 +228,7 @@ li {
     text-align: center;
 }
 
-.step{
+.step {
     margin: 8px;
 }
 
@@ -253,7 +256,8 @@ li {
     color: #5E5E5E;
     font-size: 20px;
     font-weight: 400;
-    line-height: 140%; /* 28px */
+    line-height: 140%;
+    /* 28px */
 }
 
 .lesson-item-text {
@@ -261,10 +265,11 @@ li {
     color: #313131;
     font-size: 24px;
     font-weight: 700;
-    line-height: 120%; /* 33.6px */
+    line-height: 120%;
+    /* 33.6px */
 }
 
-.step-line1{
+.step-line1 {
     position: absolute;
     margin-left: 326px;
     margin-top: 73px;
@@ -343,7 +348,8 @@ li {
     margin: 40px 0 150px 0;
 }
 
-.lesson-text p, label {
+.lesson-text p,
+label {
     margin: 0 0 14px;
 }
 
@@ -355,7 +361,7 @@ li {
     margin-top: 109px;
 }
 
-#now-window-item .pinned-window-item{
+#now-window-item .pinned-window-item {
     color: #913E98;
     font-size: 20px;
     font-weight: 400;
@@ -385,18 +391,18 @@ li {
 }
 
 .little-lessons-title {
-    color:#313131;
+    color: #313131;
     font-size: 24px;
     font-weight: 600;
     line-height: 150%;
     margin: 30px 0 20px;
 }
 
-.lesson-container li{
+.lesson-container li {
     list-style-position: inside;
 }
 
-    /*ТЕСТЫ*/
+/*ТЕСТЫ*/
 
 #test-list {
     border-radius: 20px;
@@ -408,19 +414,21 @@ li {
 
 .test-question {
     color: #313131;
-    font-size: 20px;;
+    font-size: 20px;
+    ;
     font-weight: 600;
     line-height: 140%;
     margin: 32px 30px 10px 0;
 }
 
-.lesson-container label{
+.lesson-container label {
     margin-top: 8px;
 }
 
-#test-list #main-action-button{
+#test-list #main-action-button {
     margin-top: 30px;
 }
+
 /*кнопки*/
 #test-list input {
     /*display: none;*/
@@ -431,7 +439,7 @@ li {
 }
 
 
-    /*index11*/
+/*index11*/
 
 .list .all-title {
     margin: 60px 0 40px 0;
@@ -445,7 +453,7 @@ li {
     margin-bottom: 150px;
 }
 
-.list-item{
+.list-item {
     display: flex;
     align-items: flex-start;
     gap: 50px;
@@ -468,27 +476,34 @@ li {
 
 
 /*АДАПТАЦИЯ*/
-
+.burger-checkbox {
+    display: none;
+}
 
 @media (max-width: 1217px) {
     .container {
         max-width: 1096px;
     }
+
     .menu {
         margin-left: 360px;
     }
 
-    .step-line1, .step-line2 {
+    .step-line1,
+    .step-line2 {
         display: none;
     }
+
     .step-items {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
+
     .lesson-items {
         grid-template-columns: repeat(2, 392px);
     }
+
     .footer-info p {
         margin-top: 10px;
         display: block;
@@ -500,18 +515,23 @@ li {
         max-width: 960px;
         justify-content: center;
     }
+
     .menu {
         margin-left: 180px;
     }
+
     .lessons-title {
         text-align: center;
     }
+
     .list-items {
         width: 98%;
     }
+
     .list-item-text {
         padding: 20px 20px 20px 0;
     }
+
     #pinned-window {
         display: none;
     }
@@ -532,7 +552,6 @@ li {
 
     .step-line1,
     .step-line2,
-    .menu,
     .main-image,
     .access {
         display: none;
@@ -572,14 +591,116 @@ li {
         margin-top: 20px;
         margin-left: 0;
     }
+
     .test {
         padding: 0;
     }
+
     .main-content {
         padding: 80px 0 0 0;
     }
+
     .steps {
         padding: 80px 0;
+    }
+
+    /*Бургер меню*/
+    .menu {
+        margin-left: 60px;
+    }
+
+    .menu-list {
+        position: fixed;
+        top: 120px;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(49, 49, 49);
+        transform: translateX(-100%);
+        transition: .3s;
+        z-index: 10;
+        text-align: center;
+    }
+
+    .menu-item a {
+        color: #ffffff;
+    }
+
+    .menu-list li {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        text-align: center;
+        width: 100%;
+    }
+
+    .burger-checkbox {
+        position: absolute;
+        visibility: hidden;
+    }
+
+    .burger {
+        position: relative;
+        z-index: 1;
+        cursor: pointer;
+        display: block;
+        position: relative;
+        border: none;
+        background: transparent;
+        width: 40px;
+        height: 26px;
+    }
+
+    .burger::before,
+    .burger::after {
+        content: '';
+        left: 0;
+        position: absolute;
+        display: block;
+        width: 100%;
+        height: 4px;
+        border-radius: 10px;
+        background: rgba(49, 49, 49, 1);
+    }
+
+    .burger::before {
+        top: 0;
+        box-shadow: 0 11px 0 rgba(49, 49, 49, 1);
+        transition: box-shadow .3s .15s, top .3s .15s, transform .3s;
+    }
+
+    .burger::after {
+        bottom: 0;
+        transition: bottom .3s .15s, transform .3s;
+    }
+
+    .burger-checkbox:checked+.burger::before {
+        top: 11px;
+        transform: rotate(45deg);
+        box-shadow: 0 6px 0 rgba(0, 0, 0, 0);
+        transition: box-shadow .15s, top .3s, transform .3s .15s;
+    }
+
+    .burger-checkbox:checked+.burger::after {
+        bottom: 11px;
+        transform: rotate(-45deg);
+        transition: bottom .3s, transform .3s .15s;
+    }
+
+    .menu-item {
+        display: block;
+        padding: 8px;
+        color: white;
+        font-size: 18px;
+        text-align: center;
+        text-decoration: none;
+    }
+
+    .menu-item:hover {
+        background: rgba(255, 255, 255, .2)
+    }
+
+    .burger-checkbox:checked~.menu-list {
+        transform: translateX(0);
     }
 }
 
@@ -588,9 +709,11 @@ li {
         font-size: 16px;
 
     }
+
     .lesson-items {
         grid-template-columns: repeat(1, 260px);
     }
+
     .lesson-item-image {
         width: 260px;
     }
