@@ -611,6 +611,9 @@ label {
         display: block;
         width: 350px;
     }
+    .list-item-text {
+        padding: 20px;
+    }
 
     /*Бургер меню*/
     .menu {
