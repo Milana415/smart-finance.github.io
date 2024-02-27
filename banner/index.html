@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Анимированный баннер</title>
+    <style>
+        #banner {
+            width: 350px;
+            height: 200px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        #banner-image {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+
+        #banner-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-size: 24px;
+            text-align: center;
+        }
+
+        #banner-button {
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+            padding: 5px 2px;
+            border: 1px solid white;
+            border-radius: 5px;
+            color: white;
+            text-decoration: none;
+        }
+
+        #banner-button:hover {
+            background-color: white;
+            color: black;
+        }
+
+        @keyframes fade-in {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes fade-out {
+            from {
+                opacity: 1;
+            }
+
+            to {
+                opacity: 0;
+            }
+        }
+
+        @keyframes slide-in-from-left {
+            from {
+                transform: translateX(-100%);
+            }
+
+            to {
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes slide-out-to-right {
+            from {
+                transform: translateX(0);
+            }
+
+            to {
+                transform: translateX(100%);
+            }
+        }
+
+        @keyframes slide-in-from-right {
+            from {
+                transform: translateX(100%);
+            }
+
+            to {
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes slide-out-to-left {
+            from {
+                transform: translateX(0);
+            }
+
+            to {
+                transform: translateX(-100%);
+            }
+        }
+
+        @keyframes slide-in-from-top {
+            from {
+                transform: translateY(-100%);
+            }
+
+            to {
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes slide-out-to-bottom {
+            from {
+                transform: translateY(0);
+            }
+
+            to {
+                transform: translateY(100%);
+            }
+        }
+
+        @keyframes slide-in-from-bottom {
+            from {
+                transform: translateY(100%);
+            }
+
+            to {
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes slide-out-to-top {
+            from {
+                transform: translateY(0);
+            }
+
+            to {
+                transform: translateY(-100%);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="banner">
+        <img id="banner-image" src="banner-image.png" alt="Анимированный баннер">
+        <div id="banner-text">
+            <h1>Заголовок</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+        <a id="banner-button" href="https://ru.wikipedia.org/" target="_blank">Подробнее</a>
+    </div>
+
+    <script>
+        // Создаем анимацию для текста
+        const bannerText = document.getElementById('banner-text');
+        bannerText.style.animation = 'fade-in 2s ease-in-out';
+
+        // Создаем анимацию для кнопки
+        const bannerButton = document.getElementById('banner-button');
+        bannerButton.style.animation = 'fade-in 2s ease-in-out';
+
+        // Создаем анимацию для перехода между сценами
+        const bannerImage = document.getElementById('banner-image');
+        let currentScene = 0;
+        const scenes = [
+            {
+                image: 'banner-image-1.png',
+                text: 'Первая сцена',
+                animation: 'slide-in-from-left'
+            },
+            {
+                image: 'banner-image-2.png',
+                text: 'Вторая сцена',
+                animation: 'slide-in-from-right'
+            },
+            {
+                image: 'banner-image-3.png',
+                text: 'Третья сцена',
+                animation: 'slide-in-from-top'
+            }
+        ];
+
+        function changeScene() {
+            // Удаляем анимацию из текущей сцены
+            bannerImage.style.animation = '';
+
+            // Меняем изображение и текст
+            bannerImage.src = scenes[currentScene].image;
+            bannerText.innerHTML = '<h1>' + scenes[currentScene].text + '</h1>';
+
+            // Добавляем анимацию для новой сцены
+            bannerImage.style.animation = scenes[currentScene].animation + ' 2s ease-in-out';
+
+            // Переключаемся на следующую сцену
+            currentScene = (currentScene + 1) % scenes.length;
+
+            // Запускаем таймер для перехода к следующей сцене
+            setTimeout(changeScene, 10000);
+        }
+
+        // Запускаем таймер для перехода к следующей сцене
+        setTimeout(changeScene, 10000);
+    </script>
+</body>
+
+</html>
